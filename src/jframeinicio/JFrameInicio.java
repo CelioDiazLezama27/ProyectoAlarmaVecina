@@ -4,6 +4,9 @@
  */
 package jframeinicio;
 
+import JFrameBotonAlerta.HisorialAlertas;
+import JFrameBotonAlerta.TipoAlarma;
+
 /**
  *
  * @author WZZRDPC
@@ -14,7 +17,12 @@ public class JFrameInicio {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+       
+        HisorialAlertas histo = new HisorialAlertas();
+        TipoAlarma alarma = new TipoAlarma();
+        
+        histo.setVisible(true);
+        alarma.setVisible(false);
     }
     
 }
