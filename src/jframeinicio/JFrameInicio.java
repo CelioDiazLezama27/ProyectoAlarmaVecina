@@ -4,8 +4,9 @@
  */
 package jframeinicio;
 
-import JFrameBotonAlerta.HisorialAlertas;
-import JFrameBotonAlerta.TipoAlarma;
+import JFrameAlerta.JFAlerta;
+import JFrameAlerta.JFHistorialAlerta;
+
 
 /**
  *
@@ -18,11 +19,11 @@ public class JFrameInicio {
      */
     public static void main(String[] args) {
        
-        HisorialAlertas histo = new HisorialAlertas();
-        TipoAlarma alarma = new TipoAlarma();
+        JFHistorialAlerta histo = new JFHistorialAlerta();
+        JFAlerta alarma = new JFAlerta();
         
-        histo.setVisible(true);
-        alarma.setVisible(false);
+        histo.setVisible(false);
+        alarma.setVisible(true);
     }
     
 }
